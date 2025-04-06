@@ -4,6 +4,9 @@ docker compose up -d
 
 **Подключение**
 ```
+# В Compass
+mongodb://root:root@localhost:27017/?authSource=admin
+
 mongosh --port 27017 --username root --password root --authenticationDatabase admin
 # Or via URL string:
 mongosh "mongodb://root:root@localhost:27017/?authSource=admin"
